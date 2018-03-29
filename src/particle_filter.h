@@ -109,12 +109,15 @@ public:
 	std::string getSenseX(Particle best);
 	std::string getSenseY(Particle best);
 
+	double multiGaussian(double std_landmark[], double x1, double y1, double x2, double y2);
+
 	/**
 	* initialized Returns whether particle filter is initialized yet or not.
 	*/
 	const bool initialized() const {
 		return is_initialized;
 	}
+
 };
 
 
